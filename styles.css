@@ -1,0 +1,146 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D4F6CC;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #0e1131;
+    width: 100%;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-list li {
+    margin: 0 20px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-link:hover {
+    color: #EF5B0C;
+}
+
+/* Header */
+header {
+    background-color: #0e1131;  /* Main Color for the header */
+    color: white;
+    height: 30vh; /* Header now takes 30% of the viewport height */
+    display: flex;
+    flex-direction: column;  /* Arrange elements vertically */
+    align-items: center;
+    justify-content: center; /* Center the content vertically */
+    position: relative; /* Ensure positioning context for logos */
+    width: 100%;  /* Full width of the page */
+    margin: 0; /* Remove margin to remove distance from the top */
+    padding: 0; /* Increased padding for more height */
+}
+
+.text-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    color: #EF5B0C;
+}
+
+.text-section p {
+    font-size: 1.2em;
+    color: #3CCF4E;
+    margin: 5px 0;
+}
+
+/* Meet the Judges Section */
+.meet-strip {
+    background-color: #EF5B0C;
+    padding: 10px;
+    color: white;
+    margin-top: 10px;
+}
+
+.meet-strip h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* Main Content Section */
+.taskforce-container {
+    padding: 80px 20px;
+}
+
+/* Taskforce Section */
+.taskforce-category {
+    margin-bottom: 50px;
+}
+
+.taskforce-category h3 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Taskforce Block */
+.taskforce-block {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.taskforce-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.taskforce-card h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.taskforce-card p {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .text-section h1 { font-size: 2em; }
+    .text-section p { font-size: 1em; }
+    .taskforce-block {
+        width: 100%;
+    }
+    header {
+        padding: 80px 20px 40px;
+    }
+    .taskforce-category h3 {
+        font-size: 2em;
+    }
+}
